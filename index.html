@@ -10,34 +10,37 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-
-    <div id="container"></div>
-    <div>
-       <h1>ETCH-A-SKETCH</h1>
-    <div class="tools">
+    <form action="" method="get" novalidate>
+        <div id="Mail">
+            <label for="UserMail">Email</label>
+            <input type="email" id="UserMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required>
+            <span class="error"></span>
+        </div>
+        <div>
+            <label for="Country">Country-code</label>
+            <input type="text" id="Country" required>
+            <span class="error"></span>
+        </div>
 
         <div>
-        <p>COLORS</p> 
-    <div class="colors">
-        
-    <button class="black">Black</button>
-    <button class="red">Read</button>
-    <button class="green">Green</button>
-</div>
-</div>
-<div>
-    <p>TOOLS</p>
-<div class="buttons">
-    
-    <button class="erase">Erase</button>
-    <button class="grid">Grid</button>
-    <button class="noGrid">Delete-Grids</button>
-</div>
-</div>
-</div>
-  
-</div>  
-   
+            <label for="zipcode">Zip-code</label>
+            <input type="number" id="zipcode" required>
+            <span class="error"></span>
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="text" id="password" required>
+            <span class="error"></span>
+        </div>
+        <div>
+            <label for="confirmPassword">Password</label>
+            <input type="text" id="confirmPassword" required>
+            <span class="error"></span>
+        </div>
+
+        <button type="submit">Complete</button>
+    </form>
+
 </body>
 </html>
