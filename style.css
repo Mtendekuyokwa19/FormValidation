@@ -16,3 +16,13 @@ width: 100px;
 
 
 }
+
+input:valid{
+
+  background-color: greenyellow;
+
+}
+
+input:invalid{
+  background-color: red;
+}
